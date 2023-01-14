@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Quiz JS</title>
+</head>
+
+<body>
+    <header class="header">
+    </header>
+    <main>
+        <section class="hidden modal">
+            <div class="quiz_inner">
+                <form action="/telegram" method="post" class="login_form" enctype="application/x-www-form-urlencoded">
+                    <div class="flex">
+                        <h2>Enter your personal info</h2>
+                        <input type="text" class="login_input" placeholder="Name and Surname" name="name">
+                        <input type="text" class="login_input" placeholder="Group" name="group">
+                    </div>
+                </form>
+            </div>
+            <button class="submit_btn" id="submit_btn">Start quiz</button>
+        </section>
+        <div class="overlay hidden"></div>
+        <button class="login_btn">Start</button>
+    </main>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="./js/script1.js"></script>
+    <script src="./js/script2.js"></script>
+</body>
+
+</html>
